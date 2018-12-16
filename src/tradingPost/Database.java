@@ -11,7 +11,6 @@ public class Database {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(details.getServer(), details.getUser(), details.getPass());
-			// here sonoo is database name, root is username and password
 		} catch (Exception e) {
 			System.out.println(e);
 		}
