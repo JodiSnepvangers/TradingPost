@@ -12,7 +12,7 @@ public class Database {
 			Connection con = DriverManager.getConnection(details.getServer(), details.getUser(), details.getPass());
 			// here sonoo is database name, root is username and password
 			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select * from Material");
+			ResultSet rs = stmt.executeQuery("select * from Types");
 			while (rs.next())
 				System.out.println(rs.getString(1));
 		} catch (Exception e) {

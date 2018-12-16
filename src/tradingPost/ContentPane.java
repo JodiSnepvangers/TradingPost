@@ -17,10 +17,10 @@ public class ContentPane extends JPanel {
 		
 		for(int i = 0; i < amount; i++){
 			this.add(new ItemPanel());
-			height = height + 105;
+			height = height + 51;
 		}
-		if(height < 800){
-			height = 800;
+		if(height < 700){
+			height = 700;
 		}
 		this.setBackground(new Color(45, 23, 12));
 		this.setPreferredSize(new Dimension(770, height));

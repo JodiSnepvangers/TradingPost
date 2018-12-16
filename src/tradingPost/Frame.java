@@ -25,7 +25,7 @@ public class Frame extends JFrame {
 	private JMenuItem Potion;
 
 	public Frame(){
-		ContentPane cp = new ContentPane(120);
+		ContentPane cp = new ContentPane(12);
 		JScrollPane scroll = new JScrollPane(cp);
 		//Making the frame that contains everything in the frame.
 		//7 is the amount off item boxes inside
