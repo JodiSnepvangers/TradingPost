@@ -12,6 +12,7 @@ import javax.swing.JScrollPane;
 
 public class Frame extends JFrame {
 	
+	private Database db;
 	private JMenuBar menuBar;
 	private JMenu Menu;
 	private JMenu Items;
@@ -24,8 +25,9 @@ public class Frame extends JFrame {
 	private JMenuItem Food;
 	private JMenuItem Potion;
 
-	public Frame(){
-		ContentPane cp = new ContentPane(12);
+	public Frame(Database db){
+		this.db = db;
+		ContentPane cp = new ContentPane(12,db);
 		JScrollPane scroll = new JScrollPane(cp);
 		//Making the frame that contains everything in the frame.
 		//7 is the amount off item boxes inside

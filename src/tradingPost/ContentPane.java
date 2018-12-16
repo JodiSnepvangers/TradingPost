@@ -8,15 +8,17 @@ import javax.swing.JPanel;
 
 public class ContentPane extends JPanel {
 	
+	private Database db;
 	private int amount;
 	private int height;
 
-	public ContentPane(int a) {
+	public ContentPane(int a, Database db){
+		this.db = db;
 		amount = a;
 		height = 0;
 		
 		for(int i = 0; i < amount; i++){
-			this.add(new ItemPanel());
+			this.add(new ItemPanel(db));
 			height = height + 51;
 		}
 		if(height < 700){
