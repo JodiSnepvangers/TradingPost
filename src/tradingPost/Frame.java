@@ -27,7 +27,7 @@ public class Frame extends JFrame {
 
 	public Frame(Database db){
 		this.db = db;
-		ContentPane cp = new ContentPane(12,db);
+		ContentPane cp = new ContentPane(db);
 		JScrollPane scroll = new JScrollPane(cp);
 		//Making the frame that contains everything in the frame.
 		//7 is the amount off item boxes inside

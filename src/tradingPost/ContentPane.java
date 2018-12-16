@@ -12,9 +12,9 @@ public class ContentPane extends JPanel {
 	private int amount;
 	private int height;
 
-	public ContentPane(int a, Database db){
+	public ContentPane(Database db){
 		this.db = db;
-		amount = a;
+		amount = db.getSize();
 		height = 0;
 		
 		for(int i = 0; i < amount; i++){
