@@ -29,4 +29,47 @@ public class ITEM {
 		this.healing = healing;
 		this.description = description;
 	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public String getDescription(){
+		return description;
+	}
+	
+	public int getItemID(){
+		return id;
+	}
+	public String getType(){
+		return type;
+	}
+	
+	public int getOwnerID(){
+		return ownerId;
+	}
+	
+	public String getRacePref(){
+		return racePref;
+	}
+	
+	public String getMaterial(){
+		return material;
+	}
+	
+	public int getDamage(){
+		return damage;
+	}
+	
+	public int getProtection(){
+		return protection;
+	}
+	
+	public int getHealing(){
+		return healing;
+	}
+	
+	public int getWeight(){
+		return weight;
+	}
 }
