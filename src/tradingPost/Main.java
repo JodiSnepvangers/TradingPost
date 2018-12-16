@@ -9,6 +9,8 @@ public class Main {
 
 		Frame frame = new Frame();
 		Database db = new Database();
+		System.out.println(db.getStats(1));
+		System.out.println(db.getSize());
 	}
 
 }
