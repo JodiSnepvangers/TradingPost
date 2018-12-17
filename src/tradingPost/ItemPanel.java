@@ -24,7 +24,7 @@ public class ItemPanel extends JPanel{
 		stats = new JTextField();
 		stats.setEditable(false);
 		stats.setPreferredSize(new Dimension(200,80));
-		stats.setText(db.getStats(1));
+		stats.setText(db.getName(1));
 		stats.setBorder(BorderFactory.createLineBorder(Color.black));
 		this.setPreferredSize(new Dimension(250 ,150));
 		this.setBackground(new Color(122, 98, 86));

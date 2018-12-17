@@ -9,7 +9,7 @@ public class Main {
 		Database db = new Database();
 		Frame frame = new Frame(db);
 		ItemListRegister itemReg = new ItemListRegister(db);
-		System.out.println(db.getStats(1));
+		
 		System.out.println(db.getSize());
 	}
 
