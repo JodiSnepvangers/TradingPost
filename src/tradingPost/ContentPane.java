@@ -12,13 +12,13 @@ public class ContentPane extends JPanel {
 	private int amount;
 	private int height;
 
-	public ContentPane(Database db){
+	public ContentPane(Database db, ItemListRegister itemReg){
 		this.db = db;
 		amount = db.getSize();
 		height = 0;
 		
 		for(int i = 0; i < amount; i++){
-			this.add(new ItemPanel(db));
+			this.add(new ItemPanel(db, itemReg));
 			height = height + 51;
 		}
 		if(height < 700){

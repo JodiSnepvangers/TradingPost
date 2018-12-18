@@ -14,9 +14,12 @@ public class ItemPanel extends JPanel{
 	private JButton trade;
 	private JTextField stats;
 	private Database db;
+	private ItemListRegister itemReg;
+	private ITEM item;
 	
-	public ItemPanel(Database db){
+	public ItemPanel(Database db, ItemListRegister itemReg){
 		this.db = db;
+		this.itemReg = itemReg;
 //		trade = new JButton("Trade");
 //		trade.setPreferredSize(new Dimension(100, 80));
 //		trade.setBackground(Color.white);
@@ -24,7 +27,10 @@ public class ItemPanel extends JPanel{
 		stats = new JTextField();
 		stats.setEditable(false);
 		stats.setPreferredSize(new Dimension(200,80));
-		stats.setText(db.getName(1));
+		
+		item = itemReg.getItem(0);
+		stats.setText(item.getName());
+		//stats.setText(db.getName(1));
 		stats.setBorder(BorderFactory.createLineBorder(Color.black));
 		this.setPreferredSize(new Dimension(250 ,150));
 		this.setBackground(new Color(122, 98, 86));

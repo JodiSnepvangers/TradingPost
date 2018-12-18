@@ -7,8 +7,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		Database db = new Database();
-		Frame frame = new Frame(db);
+		
 		ItemListRegister itemReg = new ItemListRegister(db);
+		itemReg.update();
+		
+		Frame frame = new Frame(db, itemReg);
 		
 		System.out.println(db.getSize());
 	}

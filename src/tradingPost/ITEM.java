@@ -9,7 +9,7 @@ public class ITEM {
 	String description;
 	int id;
 	String type;
-	int ownerId;
+	String ownerId;
 	String racePref;
 	String material;
 	int damage;
@@ -17,11 +17,12 @@ public class ITEM {
 	int protection;
 	int weight;
 	
-	public ITEM(int id, ItemTypes type, int ownerId, Races race, String material, String name, int weight, int damage, int protection, int healing, String description){
+	public ITEM(int id, ItemTypes type, String ownerId, Races race, String material, String name, int weight, int damage, int protection, int healing, String description){
 		this.id = id;
 		this.type =type.toString();
 		this.ownerId = ownerId;
 		this.racePref = race.toString();
+		this.name = name;
 		this.material = material;
 		this.weight = weight;
 		this.damage = damage;
@@ -45,7 +46,7 @@ public class ITEM {
 		return type;
 	}
 	
-	public int getOwnerID(){
+	public String getOwnerID(){
 		return ownerId;
 	}
 	

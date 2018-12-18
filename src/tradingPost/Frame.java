@@ -25,9 +25,9 @@ public class Frame extends JFrame {
 	private JMenuItem Food;
 	private JMenuItem Potion;
 
-	public Frame(Database db){
+	public Frame(Database db, ItemListRegister itemReg){
 		this.db = db;
-		ContentPane cp = new ContentPane(db);
+		ContentPane cp = new ContentPane(db, itemReg);
 		JScrollPane scroll = new JScrollPane(cp);
 		//Making the frame that contains everything in the frame.
 		//7 is the amount off item boxes inside
