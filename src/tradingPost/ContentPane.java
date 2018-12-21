@@ -17,8 +17,8 @@ public class ContentPane extends JPanel {
 		amount = db.getSize();
 		height = 0;
 		
-		for(int i = 0; i < amount; i++){
-			this.add(new ItemPanel(db, itemReg));
+		for(int i = 1; i < amount; i++){
+			this.add(new ItemPanel(db, itemReg, i));
 			height = height + 51;
 		}
 		if(height < 700){
